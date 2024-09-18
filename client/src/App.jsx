@@ -1,8 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
 
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Welcome to KryptX</h1>;
-}
+const App = () => (
+  <div className="min-h-screen">
+    <div className="gradient-bg-welcome">
+      <Navbar />
+      <Welcome />
+    </div>
+    <Services />
+    <Transactions />
+    <Footer />
+  </div>
+);
+
+export default App;
